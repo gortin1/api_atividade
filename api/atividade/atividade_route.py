@@ -5,7 +5,7 @@ from api.atividade.atividade_model import AtividadeNaoEncontrada, atividade_por_
 atividades_blueprint = Blueprint("atividades", __name__)
 
 def validar_professor(professor_id):
-    response = requests.get(f"http://localhost:5000/api/professores/{professor_id}")
+    response = requests.get(f"http://api-gestao-escolar:5000/api/professores/{professor_id}")
     return response.status_code == 200
 
 
