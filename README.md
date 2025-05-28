@@ -29,11 +29,11 @@ A API de Atividade de Salas é um **microsserviço** que faz parte de um sistema
 
 ## 📡 Endpoints Principais
 
-- `GET /reservas` – Lista todas as atividades
-- `POST /reservas` – Cria uma nova atividade
-- `GET /reservas/<id>` – Detalha uma atividade
-- `PUT /reservas/<id>` – Atualiza uma atividade (é necessário preencher todos os campos para atualizar a atividade)
-- `DELETE /reservas/<id>` – Remove uma atividade
+- `GET /atividades` – Lista todas as atividades
+- `POST /atividades` – Cria uma nova atividade
+- `GET /atividades/<id>` – Detalha uma atividade
+- `PUT /atividades/<id>` – Atualiza uma atividade (é necessário preencher todos os campos para atualizar a atividade)
+- `DELETE /atividades/<id>` – Remove uma atividade
 
 ### Exemplo de corpo JSON para criação:
 
