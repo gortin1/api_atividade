@@ -41,7 +41,7 @@ docker build -t api-gestao-escolar .
 ### 3º Passo - Rode a imagem criada na network que você criou
 
 ``` bash
-docker run -d --network rede -p 5000:5000 --name api-gestao-escolar api-gestao-escolar
+docker run -d --network minha-network -p 5000:5000 --name api-gestao-escolar api-gestao-escolar
 cd ..
 ```
 
@@ -55,7 +55,7 @@ docker build -t atividade-salas atividade-salas
 ### 5º Passo - Rode a imagem criada na network que você criou
 
 ``` bash
-docker run -d --network rede -p 5003:5003 --name api-atividade api-atividade-salas
+docker run -d --network minha-network -p 5003:5003 --name api-atividade api-atividade-salas
 cd ..
 ```
 
