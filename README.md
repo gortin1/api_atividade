@@ -21,10 +21,25 @@ A API de Atividade de Salas é um **microsserviço** que faz parte de um sistema
 
 ---
 
-## ▶️ Como Executar a API
+## 🐳 Como Executar as APIs com Docker
 
-**Observação importante: Para melhor entendimento coloque ambas as pastas das APIs em uma só pasta!**
+Este guia mostra como executar duas APIs separadas (`atividade-sala` e `api-gestao-escolar`) em containers Docker diferentes, interligados por uma rede Docker personalizada.
 
+---
+
+### ⚠️ Observação Importante
+
+> **Para melhor organização e entendimento, coloque ambas as pastas das APIs dentro de uma única pasta principal.**
+>
+> Exemplo de estrutura:
+>
+> ```
+> projeto/
+> ├── atividade-sala/
+> └── ProjetoApi/
+> ```
+
+---
 ### 1º Passo - Crie uma network em Docker
 
 ``` bash
