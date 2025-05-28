@@ -23,9 +23,43 @@ A API de Atividade de Salas é um **microsserviço** que faz parte de um sistema
 
 ## ▶️ Como Executar a API
 
--- Explicar 
+`Observação importante: Para melhor entendimento coloque ambas as pastas das APIs em uma só pasta!`
 
+### 1º Passo - Crie uma network em Docker
+
+--- bash
+docker network create minha-network
 ---
+
+### 2º Passo - Construa a imagem api-gestão-escolar da [api de gestão](https://github.com/gortin1/ProjetoApi.git) 
+
+--- bash
+cd projetoAPI
+docker build -t api-gestao-escolar .
+--- 
+
+### 3º Passo - Rode a imagem criada na network que você criou
+
+--- bash
+docker run -d --name api-gestao-escolar --network minha-network api-gestao-escolar
+cd ..
+---
+
+### 4º Passo - Construa a imagem atividade-salas da [api de atividade](https://github.com/gortin1/atividade-salas.git)
+
+--- bash
+cd atividade-salas
+docker build -t atividade-salas atividade-salas
+---
+
+### 5º Passo - Rode a imagem criada na network que você criou
+
+--- bash
+docker run -d --name api-gestao-escolar --network minha-network api-gestao-escolar
+cd ..
+---
+
+#### Pronto! Você já pode utilizar a api tranquilamente!
 
 ## 📡 Endpoints Principais
 
