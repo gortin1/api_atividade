@@ -88,7 +88,7 @@ cd ..
 
 #### Pronto! Você já pode utilizar a api tranquilamente!
 
-⚠️ **Aviso:** A API de Reservas estará acessível em: **http://localhost:5003/atividades**.
+⚠️ **Aviso:** A API de Atividades estará acessível em: **http://localhost:5003/atividades**.
 
 ## 📡 Endpoints Principais
 
