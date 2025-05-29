@@ -23,18 +23,17 @@ A API de Atividade de Salas é um **microsserviço** que faz parte de um sistema
 
 ## 🐳 Como Executar as APIs com Docker
 
-Este guia mostra como executar duas APIs separadas (`atividade-sala` e `api-gestao-escolar`) em containers Docker diferentes, interligados por uma rede Docker personalizada.
+Este guia mostra como executar duas APIs separadas (`atividade-salas` e `api-gestao-escolar`) em containers Docker diferentes, interligados por uma rede Docker personalizada.
 
 ---
 
 ## 📥 Clonando os Repositórios
 
-Este projeto é composto por três APIs independentes que se comunicam via rede Docker. Para executar corretamente, você deve clonar todos os repositórios:
+Este projeto é composto por duas APIs independentes que se comunicam via rede Docker. Para executar corretamente, você deve clonar todos os repositórios:
 
 ```
 git clone https://github.com/seu-usuario/atividade-salas.git
 git clone https://github.com/seu-usuario/ProjetoApi.git
-git clone https://github.com/seu-usuario/reserva-salas.git
 ```
 
 ---
